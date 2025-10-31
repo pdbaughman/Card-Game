@@ -8,3 +8,4 @@ Monetize? – We will use ads to monetize our app
 
 Members:
 Dalton Baughman (pdbaughman)
+Fiker Wondwosen (FikerWondwosen)
