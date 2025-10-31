@@ -10,3 +10,4 @@ Members:
 Dalton Baughman (pdbaughman)
 Fiker Wondwosen (FikerWondwosen)
 Ethan Rhodes (semicolonsemicolon)
+Daniel Rios (Cactomelon)
