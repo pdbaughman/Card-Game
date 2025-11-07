@@ -1,0 +1,109 @@
+# =============== #
+# Unity Generated #
+# =============== #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
+# Uncomment if you have the Visual Studio package installed
+# .vs/
+
+# =============== #
+# User-specific   #
+# =============== #
+UserSettings/
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.svd
+*.pidb
+*.booproj
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# =============== #
+# Build artifacts #
+# =============== #
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.xcodeproj
+*.xcworkspace
+
+# =============== #
+# OS Generated    #
+# =============== #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =============== #
+# JetBrains Rider #
+# =============== #
+.idea/
+*.sln.iml
+
+# =============== #
+# Package Manager #
+# =============== #
+[Pp]ackages/com.unity.package-manager/
+[Pp]ackages/manifest.json.meta
+[Pp]ackages/packages-lock.json.meta
+
+# =============== #
+# Cache & Profiles#
+# =============== #
+[Bb]uildProfiles/
+[Tt]extureProfiles/
+[Gg]PUCache/
+
+# =============== #
+# Addressables     #
+# =============== #
+[Aa]ssets/AddressableAssetsData/*/*.bin*
+[Aa]ssets/AddressableAssetsData/*/*.hash
+[Aa]ssets/AddressableAssetsData/link.xml
+[Aa]ssets/StreamingAssets/aa/
+
+# =============== #
+# Crash Reports    #
+# =============== #
+sysinfo.txt
+crash-reports/
+
+# Visual Studio Code
+.vscode/
+
+# Git LFS (for large assets)
+*.psd
+*.fbx
+*.wav
+*.tga
+*.tif
+*.png
+*.jpg
+*.mp4
+*.mov
+
+# Unity Collaborate
+.collabignore
