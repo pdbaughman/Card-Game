@@ -6,6 +6,49 @@ How? – Our project is to create a game based on the card game where you must f
 
 Monetize? – We will use ads to monetize our app
 
+
+
+Game features
+***main menu***
+-start button
+-difficulty selector
+-exit game
+
+***sprites***
+-menu buttons
+-background
+-card
+-matching images
+
+***sounds***
+-card flip
+-music
+-match found
+-match not found
+-win
+
+***difficulties***
+-number of cards
+
+***animations***
+-card flipping
+-menu animations
+
+***game loop***
+-cards are randomly arranged
+-two cards of each category
+-cards start face down
+-pick two cards
+-	if match, stay up
+-	if not, wait a second and flip back over
+-keep track of total moves
+-game ends when all cards are flipped
+
+***ingame ui***
+-exit to menu
+
+
+
 Members:
 Dalton Baughman (pdbaughman)
 Fiker Wondwosen (FikerWondwosen)
