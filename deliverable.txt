@@ -1,0 +1,10 @@
+NOTE: Matching cards means matching categories, not exact duplicate cards. 
+i.e. a card that has a banana on it will have another card that has a fruit on it such as an apple.
+
+Here is a list of requirements that our project must have:
+
+1. A main menu with appropriate buttons (start, options (if applicable), and exit
+2. scene with at least 8 cards
+3. cards can flip over when clicked
+4. when clicking two matching cards in a row, they permanently flip face up
+5. cards are randomized but each card will always have a corresponding matching card
