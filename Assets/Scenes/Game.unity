@@ -290,14 +290,14 @@ MonoBehaviour:
   cardPrefab: {fileID: 5458616112455254882, guid: 3c5fa8690285aa842a5203d84bf2cb43, type: 3}
   cardGridParent: {fileID: 669074000}
   cardSprites:
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
-  - {fileID: 8957324059118975939, guid: b58405a47d0fa044e8b9318564b107f8, type: 3}
+  - {fileID: 7207882119082248946, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: 354327494, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: 1389815955, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: 613485709, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: -1615372839, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: -472625971, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: -292513566, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: -1846847155, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   flipBackDelay: 0.8
 --- !u!4 &1331916297
 Transform:
