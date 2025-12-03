@@ -5,14 +5,21 @@ using UnityEngine;
 public class MemoryGameManager : MonoBehaviour
 {
     [Header("Setup")]
-    public MemoryCard cardPrefab;
-    public Transform cardGridParent;
-    public List<Sprite> cardSprites;   // unique sprites for each pair
-    public float flipBackDelay = 0.8f; // seconds before flipping back
+    [SerializeField] private GameObject cardPrefab;
+    [SerializeField] private Transform cardGridParent;
+    [SerializeField] private List<Sprite> cardSprites;   // unique sprites for each pair
+    [SerializeField] private float flipBackDelay = 0.8f; // seconds before flipping back
 
     private MemoryCard firstCard;
     private MemoryCard secondCard;
     private bool isChecking = false;
+	
+	public static MemoryGameManager instance;
+
+	void Awake()
+	{
+		instance = this;
+	}
 
     void Start()
     {
@@ -35,8 +42,9 @@ public class MemoryGameManager : MonoBehaviour
         // Instantiate cards
         foreach (int id in cardIds)
         {
-            MemoryCard card = Instantiate(cardPrefab, cardGridParent);
-            card.Init(id, cardSprites[id], this);
+            GameObject card = Instantiate(cardPrefab, cardGridParent);
+			MemoryCard cardScript = card.GetComponent<MemoryCard>();
+            cardScript.Init(id, cardSprites[id]);
         }
     }
 

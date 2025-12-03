@@ -9,7 +9,8 @@ public class MemoryCard : MonoBehaviour
     public Image frontImage;       // Image component on FrontImage
 
     [HideInInspector] public int id;   // pair id
-    [HideInInspector] public MemoryGameManager manager;
+    
+	private MemoryGameManager manager;
 
     private bool isFaceUp = false;
     private bool isMatched = false;
@@ -25,11 +26,16 @@ public class MemoryCard : MonoBehaviour
 
         ShowBack();
     }
+	
+	void Start() 
+	{
+		// Get game manager
+		manager = MemoryGameManager.instance;
+	}
 
-    public void Init(int id, Sprite sprite, MemoryGameManager manager)
+    public void Init(int id, Sprite sprite)
     {
         this.id = id;
-        this.manager = manager;
 
         if (frontImage != null && sprite != null)
         {
