@@ -9,6 +9,7 @@ public class MemoryGameManager : MonoBehaviour
     [SerializeField] private Transform cardGridParent;
     [SerializeField] private List<Sprite> cardSprites;   // unique sprites for each pair
     [SerializeField] private float flipBackDelay = 0.8f; // seconds before flipping back
+	[SerializeField] private GameObject winScreen;
 
     private MemoryCard firstCard;
     private MemoryCard secondCard;
@@ -94,7 +95,22 @@ public class MemoryGameManager : MonoBehaviour
             // Match: keep them face up
             firstCard.SetMatched();
             secondCard.SetMatched();
-            // Optional: check for win condition here
+            // Check win condition
+			var flag = false;
+			foreach (Transform child in cardGridParent) 
+			{
+				var cardScript = child.gameObject.GetComponent<MemoryCard>();
+				if (!cardScript.GetMatched())
+				{
+					flag = true;
+					break;
+				}
+			}
+			if (!flag)
+			{
+				// Win
+				winScreen.SetActive(true);
+			}
         }
         else
         {

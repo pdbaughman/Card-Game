@@ -76,4 +76,9 @@ public class MemoryCard : MonoBehaviour
         if (btn != null)
             btn.interactable = false;
     }
+	
+	public bool GetMatched()
+	{
+		return isMatched;
+	}
 }
