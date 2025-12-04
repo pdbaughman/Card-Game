@@ -1,5 +1,6 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class MemoryCard : MonoBehaviour
 {
@@ -14,6 +15,40 @@ public class MemoryCard : MonoBehaviour
 
     private bool isFaceUp = false;
     private bool isMatched = false;
+
+    private bool isFlipping = false;
+
+    IEnumerator Flip(bool showFront)
+    {
+        isFlipping = true;
+
+        // 1. rotate 0 → 90
+        for (float t = 0; t < 1; t += Time.deltaTime * 6f)
+        {
+            float y = Mathf.Lerp(0, 90, t);
+            transform.localRotation = Quaternion.Euler(0, y, 0);
+            yield return null;
+        }
+
+        // 2. swap images at the halfway point
+        frontFace.SetActive(showFront);
+        backFace.SetActive(!showFront);
+
+        // 3. rotate 90 → 180
+        for (float t = 0; t < 1; t += Time.deltaTime * 6f)
+        {
+            float y = Mathf.Lerp(90, 180, t);
+            transform.localRotation = Quaternion.Euler(0, y, 0);
+            yield return null;
+        }
+
+        // 4. reset rotation (so it ends at normal 0)
+        transform.localRotation = Quaternion.identity;
+
+        isFaceUp = showFront;
+        isFlipping = false;
+    }
+
 
     void Awake()
     {
@@ -56,17 +91,16 @@ public class MemoryCard : MonoBehaviour
 
     public void ShowFront()
     {
-        if (frontFace != null) frontFace.SetActive(true);
-        if (backFace != null) backFace.SetActive(false);
-        isFaceUp = true;
+        if (!isFlipping)
+            StartCoroutine(Flip(true));
     }
 
     public void ShowBack()
     {
-        if (frontFace != null) frontFace.SetActive(false);
-        if (backFace != null) backFace.SetActive(true);
-        isFaceUp = false;
+        if (!isFlipping)
+            StartCoroutine(Flip(false));
     }
+
 
     public void SetMatched()
     {
