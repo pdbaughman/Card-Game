@@ -373,7 +373,6 @@ MonoBehaviour:
   cardPrefab: {fileID: 5458616112455254882, guid: 3c5fa8690285aa842a5203d84bf2cb43, type: 3}
   cardGridParent: {fileID: 669074000}
   cardSprites:
-  - {fileID: 7207882119082248946, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   - {fileID: 354327494, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   - {fileID: 1389815955, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   - {fileID: 613485709, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
@@ -381,6 +380,20 @@ MonoBehaviour:
   - {fileID: -472625971, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   - {fileID: -292513566, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
   - {fileID: -1846847155, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  - {fileID: -1846847155, guid: 7cf6ab62c23591a41b17e9d35173ea64, type: 3}
+  newSprites:
+  - card1: {fileID: 2025694706279844787, guid: 9eeef3b802ab143418aca1527d88ecaa, type: 3}
+    card2: {fileID: 5270027879675080354, guid: 2a535cff277fbd848a27b68e446be26d, type: 3}
+  - card1: {fileID: 8697953860697081103, guid: a6dbf135630249445a2c4c1c8cf9ddfe, type: 3}
+    card2: {fileID: -1398285433696251160, guid: 83bf94ac45b53e8418c97d3279073acd, type: 3}
+  - card1: {fileID: -8759002183278304761, guid: 3ca0d3cf40d43364f873b7aa1f0606d3, type: 3}
+    card2: {fileID: -6314019826581172570, guid: e13b5da46a480424ab80861fa7a541d6, type: 3}
+  - card1: {fileID: 8961014914111613873, guid: 5137ab44339e5944f81312d4536afd3f, type: 3}
+    card2: {fileID: 3057875503843585962, guid: bd65780e5a833a14cb23b07f320a09cb, type: 3}
+  - card1: {fileID: 3045676180217478697, guid: bf5bb3f65ade9f74286521479807f8c9, type: 3}
+    card2: {fileID: 3697249445347210801, guid: 1cf21b807652a06469f49b458910cb38, type: 3}
+  - card1: {fileID: -5461556921437162555, guid: e516bd91917d7bb44aa0b2a42bf2ad1b, type: 3}
+    card2: {fileID: 1373142571229762650, guid: 9ad8d088103e9bf4ea01ddbb53c23256, type: 3}
   flipBackDelay: 0.8
   winScreen: {fileID: 1868183223}
 --- !u!4 &1331916297

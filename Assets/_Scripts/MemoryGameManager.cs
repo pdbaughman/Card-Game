@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MemoryGameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class MemoryGameManager : MonoBehaviour
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private Transform cardGridParent;
     [SerializeField] private List<Sprite> cardSprites;   // unique sprites for each pair
+	[SerializeField] private List<CardPair> newSprites;   // unique sprites for each pair
     [SerializeField] private float flipBackDelay = 0.8f; // seconds before flipping back
 	[SerializeField] private GameObject winScreen;
 
@@ -31,8 +33,9 @@ public class MemoryGameManager : MonoBehaviour
     {
         // Each sprite becomes a pair (2 cards)
         List<int> cardIds = new List<int>();
+		List<int> usedIds = new List<int>();
 
-        for (int i = 0; i < cardSprites.Count; i++)
+        for (int i = 0; i < newSprites.Count; i++)
         {
             cardIds.Add(i);
             cardIds.Add(i); // add pair
@@ -43,9 +46,18 @@ public class MemoryGameManager : MonoBehaviour
         // Instantiate cards
         foreach (int id in cardIds)
         {
-            GameObject card = Instantiate(cardPrefab, cardGridParent);
+			GameObject card = Instantiate(cardPrefab, cardGridParent);
 			MemoryCard cardScript = card.GetComponent<MemoryCard>();
-            cardScript.Init(id, cardSprites[id]);
+			// Decide which image to use
+			if (usedIds.Contains(id))
+			{
+				cardScript.Init(id, newSprites[id].card2);
+			}
+            else
+            {
+				cardScript.Init(id, newSprites[id].card1);
+				usedIds.Add(id);
+			}
         }
     }
 
@@ -123,4 +135,11 @@ public class MemoryGameManager : MonoBehaviour
         secondCard = null;
         isChecking = false;
     }
+}
+
+[Serializable]
+public struct CardPair
+{
+	public Sprite card1;
+	public Sprite card2;
 }
