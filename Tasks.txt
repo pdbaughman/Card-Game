@@ -1,0 +1,25 @@
+UI: (Daniel)
+Main menu UI
+Functional start button
+Functional exit button
+Game win UI
+Functional reset button
+
+Progammer 1: (Dalton)
+Create a card manager
+Figure out how to store pairs of cards
+Generate the board with pairs of cards
+
+Programmer 2: (Ethan)
+Make cards clickable and call a function from card manager
+Create game logic in card manager: store current pair, if match then stay, if not then reset
+Win game when all cards are flipped
+
+Artist/Sound: (Andrew)
+Create and import card sprites
+Create music and basic sound fx
+Create Background music player
+
+Animator: (Fiker)
+Create card flip animation when clicked
+Animate completed UI
