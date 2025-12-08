@@ -1,3 +1,9 @@
+HOW TO DOWNLOAD / PLAY:
+1. Download ZIP of main branch / clone repository and fetch main branch.
+2. If ZIP, extract all
+3. Navigate to the Build folder and run Card-Game.exe
+4. If using Windows Defender, More Options -> Run Anyway
+
 # Card-Game
 
 Problem? – The problem our project hopes to solve is that elderly people frequently face cognitive decline due to inactivity. We hope to create a game that will stimulate and improve their cognitive abilities.
